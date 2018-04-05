@@ -73,11 +73,11 @@ module.exports.connections = {
    */
   postgres: {
     adapter: 'sails-postgresql',
-    host: process.env.DB_HOST || 'localhost',
-    user:  process.env.DB_USER || 'postgres',
-    password: process.env.DB_PASSWORD || 'admin1!',
+    host: process.env.DB_HOST || 'pg-aue-dev-api-kong.postgres.database.azure.com',
+    user:  process.env.DB_USER || 'konga@pg-aue-dev-api-kong',
+    password: process.env.DB_PASSWORD || '7a65eaf8-4bcf-4f74-839d-6a513c6ff056',
     port: process.env.DB_PORT || 5432,
-    database: process.env.DB_DATABASE ||'konga_database',
+    database: process.env.DB_DATABASE ||'konga',
     poolSize: process.env.DB_POOLSIZE || 10,
     ssl: process.env.DB_SSL ? true : false // If set, assume it's true
   },
